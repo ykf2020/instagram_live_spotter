@@ -8,7 +8,7 @@ const { OBSWebSocket } = require("obs-websocket-js");
 
   // 連接 obs websocket
   const obs = new OBSWebSocket();
-  await obs.connect("ws://172.20.10.13:4455", "1234qwer");
+  await obs.connect("ws://127.0.0.1:4455", "password");
 
   // 啟動瀏覽器
   const browser = await puppeteer.launch({
